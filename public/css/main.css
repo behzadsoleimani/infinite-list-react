@@ -1,0 +1,16 @@
+@import "./iran-yekan.css";
+@import "./rtl.css";
+html, body {
+  min-height: 100vh;
+}
+
+body>#root {
+  min-height: 100vh;
+  /* min-width: 100vw; */
+  overflow: auto;
+}
+
+
+a {
+  text-decoration: none;
+}
