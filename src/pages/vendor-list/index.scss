@@ -1,0 +1,51 @@
+@import "src/styles/scss/_variables";
+
+.main {
+    padding: 5%;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &__row {
+        &--active {
+            display: flex;
+            background-color: $primary-green;
+            padding: 15px;
+            width: 160px;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            & span {
+                color: $white-color;
+            }
+        }
+
+        &--deactive {
+            display: flex;
+            background-color: #ccc;
+            padding: 15px;
+            width: 160px;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            & span {
+                color: $white-color;
+                cursor: pointer;
+            }
+        }
+
+        &--img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}
