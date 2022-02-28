@@ -1,0 +1,15 @@
+@import "src/styles/scss/_variables";
+
+.link {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    &__anchor {
+        padding: 20px;
+        color: $white-color;
+        background-color: $primary-color;
+        border-radius: 20px;
+    }
+}
