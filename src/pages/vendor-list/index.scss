@@ -49,3 +49,22 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+}
+
