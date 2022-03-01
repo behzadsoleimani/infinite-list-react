@@ -16,14 +16,14 @@ export default () => {
             <header className="card__content--header">
               <div className="card__content--img-parent">
                 <img src={item.data.backgroundImage}
-                  alt={item.data.title}
+                  alt={item.data.title  || ""}
                 />
               </div>
               <div className="best-coupon-title">{item.data.best_coupon}
               </div>
               <div className="logo-parent">
                 <img
-                  src={item.data.defLogo} alt={item.data.title}
+                  src={item.data.defLogo} alt={item.data.title || ""}
                 />
               </div></header>
             <div className="footer-content">

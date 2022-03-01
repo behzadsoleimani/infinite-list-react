@@ -20,6 +20,7 @@
             background-color: $primary-green;
             padding: 15px;
             width: 160px;
+            margin: 2px;
             border-radius: 10px;
             justify-content: space-between;
             align-items: center;
@@ -36,6 +37,7 @@
             border-radius: 10px;
             justify-content: space-between;
             align-items: center;
+            margin: 2px;
             & span {
                 color: $white-color;
                 cursor: pointer;

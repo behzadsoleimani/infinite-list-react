@@ -58,7 +58,8 @@ export default () => {
         <div className={"filters"}>
           {(filters || []).map((filter: any) => (
             <div key={filter.value} className={filter.selected ? "filters__row--active" : "filters__row--deactive"} ><span onClick={handleFilterClick(filter.value)}>{filter.title}</span>
-              {filter.selected && <img onClick={removeFilter} className={"filters__row--img"} src="/img/closeIcond.png" />}
+              {filter.selected && <img onClick={removeFilter}
+              alt={""} className={"filters__row--img"} src="/img/closeIcond.png" />}
             </div>
           ))}
         </div>
