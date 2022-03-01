@@ -22,9 +22,8 @@ export default () => {
 
 
   const infiniteScroll = () => {
-    // End of the document reached?
-    if (window.innerHeight + document.documentElement.scrollTop
-      === document.documentElement.offsetHeight) {
+    if (Math.ceil(window.innerHeight + document.documentElement.scrollTop)
+    >= document.documentElement.offsetHeight) {
       setPage(page + 1)
     }
   }
@@ -59,14 +58,14 @@ export default () => {
           {(filters || []).map((filter: any) => (
             <div key={filter.value} className={filter.selected ? "filters__row--active" : "filters__row--deactive"} ><span onClick={handleFilterClick(filter.value)}>{filter.title}</span>
               {filter.selected && <img onClick={removeFilter}
-              alt={""} className={"filters__row--img"} src="/img/closeIcond.png" />}
+                alt={""} className={"filters__row--img"} src="/img/closeIcond.png" />}
             </div>
           ))}
         </div>
 
-          <h4>
-            {title && title.length ? title[0].data : ""}
-          </h4>
+        <h4>
+          {title && title.length ? title[0].data : ""}
+        </h4>
         <div className={"main__items"}>
           <ListItems />
         </div>
